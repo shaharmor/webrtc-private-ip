@@ -1,6 +1,6 @@
 {
   "name": "@shaharmor/webrtc-private-ip",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get your private-ip using WebRTC",
   "main": "dist/webrtc-private-ip.js",
   "types": "dist/webrtc-private-ip.d.ts",
