@@ -1,0 +1,4 @@
+{
+  "*.ts": ["npm run reformat:glob", "npm run lint:eslint:glob", "git add"],
+  "*.{js,json}": ["npm run reformat:glob", "git add"]
+}

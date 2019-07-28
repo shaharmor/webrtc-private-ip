@@ -1,0 +1,53 @@
+{
+  "name": "@shaharmor/webrtc-private-ip",
+  "version": "0.0.0",
+  "description": "Get your private-ip using WebRTC",
+  "main": "dist/webrtc-private-ip.js",
+  "types": "dist/webrtc-private-ip.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "npm run lint:tsc && npm run lint:eslint",
+    "lint:all": "npm run all -- run lint",
+    "lint:eslint": "npm run lint:eslint:glob -- '**/*.{js,ts}'",
+    "lint:eslint:glob": "eslint --max-warnings 0",
+    "lint:tsc": "tsc -p tsconfig.json --noEmit",
+    "prepublish": "npm run build",
+    "reformat": "npm run reformat:glob -- '**/*.{js,json,ts}'",
+    "reformat:glob": "prettier --write",
+    "test": "karma start",
+    "test:watch": "npm run test -- '--no-single-run'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaharmor/webrtc-private-ip.git"
+  },
+  "author": "Shahar Mor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaharmor/webrtc-private-ip/issues"
+  },
+  "homepage": "https://github.com/shaharmor/webrtc-private-ip#readme",
+  "devDependencies": {
+    "@shaharmor/eslint-config": "1.0.5",
+    "@shaharmor/prettier-config": "1.0.1",
+    "@shaharmor/tsconfig": "0.0.2",
+    "@types/chai": "4.1.7",
+    "@types/mocha": "5.2.7",
+    "@types/webrtc": "0.0.25",
+    "@typescript-eslint/eslint-plugin": "1.13.0",
+    "chai": "4.2.0",
+    "eslint": "6.1.0",
+    "eslint-import-resolver-typescript": "1.1.1",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "22.14.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "husky": "3.0.1",
+    "karma": "4.2.0",
+    "karma-chrome-launcher": "3.0.0",
+    "karma-mocha": "1.3.0",
+    "karma-typescript": "4.1.1",
+    "lint-staged": "9.2.1",
+    "mocha": "6.2.0",
+    "prettier": "1.18.2"
+  }
+}
