@@ -1,6 +1,6 @@
 const IPV4_REGEX = /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/g;
 
-export const webrtcPrivateIp = async (): Promise<string | undefined> => {
+export async function webrtcPrivateIp(): Promise<string | undefined> {
   return new Promise(async (resolve) => {
     const peer = new window.RTCPeerConnection();
     const datachannel = peer.createDataChannel('channel');
@@ -31,4 +31,4 @@ export const webrtcPrivateIp = async (): Promise<string | undefined> => {
     const sdp = await peer.createOffer();
     await peer.setLocalDescription(sdp);
   });
-};
+}

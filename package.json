@@ -4,6 +4,9 @@
   "description": "Get your private-ip using WebRTC",
   "main": "dist/webrtc-private-ip.js",
   "types": "dist/webrtc-private-ip.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "lint": "npm run lint:tsc && npm run lint:eslint",
@@ -17,6 +20,10 @@
     "test": "karma start",
     "test:watch": "npm run test -- '--no-single-run'"
   },
+  "keywords": [
+    "webrtc",
+    "private-ip"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shaharmor/webrtc-private-ip.git"
@@ -30,7 +37,7 @@
   "devDependencies": {
     "@shaharmor/eslint-config": "1.0.5",
     "@shaharmor/prettier-config": "1.0.1",
-    "@shaharmor/tsconfig": "0.0.2",
+    "@shaharmor/tsconfig": "0.0.3",
     "@types/chai": "4.1.7",
     "@types/mocha": "5.2.7",
     "@types/webrtc": "0.0.25",
