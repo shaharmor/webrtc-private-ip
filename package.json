@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/shaharmor/webrtc-private-ip#readme",
   "devDependencies": {
-    "@shaharmor/eslint-config": "1.0.5",
+    "@shaharmor/eslint-config": "1.0.6",
     "@shaharmor/prettier-config": "1.0.1",
     "@shaharmor/tsconfig": "0.0.3",
     "@types/chai": "4.1.7",
