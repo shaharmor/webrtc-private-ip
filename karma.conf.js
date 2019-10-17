@@ -6,7 +6,13 @@ module.exports = (config) => {
       '**/*.ts': ['karma-typescript'],
     },
     reporters: ['progress', 'karma-typescript'],
-    browsers: ['Chrome'],
+    browsers: ['ChromeWithoutMdns'],
+    customLaunchers: {
+      ChromeWithoutMdns: {
+        base: 'Chrome',
+        flags: ['--disable-field-trial-config', '--disable-features=WebRtcHideLocalIpsWithMdns'],
+      },
+    },
     singleRun: true,
     karmaTypescriptConfig: {
       tsconfig: './tsconfig.json',
