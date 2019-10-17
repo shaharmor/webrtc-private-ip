@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { webrtcPrivateIp } from './webrtc-private-ip';
+import { webrtcPrivateIp } from '@/webrtc-private-ip';
 
 describe('webrtc-private-ip', () => {
   it('finds an IP', async () => {
