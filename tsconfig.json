@@ -1,11 +1,15 @@
 {
   "extends": "@shaharmor/tsconfig",
   "compilerOptions": {
+    "baseUrl": ".",
     "declaration": true,
     "outDir": "dist",
     "target": "es6",
     "lib": ["es6", "dom"],
-    "types": ["webrtc", "mocha"]
+    "types": ["webrtc", "mocha"],
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
