@@ -45,7 +45,7 @@
     "@types/webrtc": "0.0.25",
     "@typescript-eslint/eslint-plugin": "1.13.0",
     "chai": "4.2.0",
-    "eslint": "6.5.1",
+    "eslint": "6.6.0",
     "eslint-import-resolver-typescript": "1.1.1",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jest": "22.21.0",
