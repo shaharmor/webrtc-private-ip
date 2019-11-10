@@ -2,27 +2,27 @@
   "name": "@shaharmor/webrtc-private-ip",
   "version": "0.0.3",
   "description": "Get your private-ip using WebRTC",
+  "keywords": [
+    "private-ip",
+    "webrtc"
+  ],
+  "homepage": "https://github.com/shaharmor/webrtc-private-ip",
+  "bugs": {
+    "url": "https://github.com/shaharmor/webrtc-private-ip/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaharmor/webrtc-private-ip.git"
+  },
   "license": "MIT",
+  "author": {
+    "name": "Shahar Mor"
+  },
   "files": [
     "dist/**/*"
   ],
   "main": "dist/webrtc-private-ip.js",
   "types": "dist/webrtc-private-ip.d.ts",
-  "author": {
-    "name": "Shahar Mor"
-  },
-  "homepage": "https://github.com/shaharmor/webrtc-private-ip",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shaharmor/webrtc-private-ip.git"
-  },
-  "bugs": {
-    "url": "https://github.com/shaharmor/webrtc-private-ip/issues"
-  },
-  "keywords": [
-    "webrtc",
-    "private-ip"
-  ],
   "scripts": {
     "build": "tsc",
     "lint": "npm run lint:tsc && npm run lint:eslint",
@@ -59,6 +59,7 @@
     "karma-typescript": "4.1.1",
     "lint-staged": "9.4.2",
     "mocha": "6.2.2",
-    "prettier": "1.19.1"
+    "prettier": "1.19.1",
+    "sort-package-json": "1.23.1"
   }
 }
