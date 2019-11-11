@@ -39,7 +39,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
     "@shaharmor/commitlint-config": "0.0.1",
-    "@shaharmor/eslint-config": "1.2.0",
+    "@shaharmor/eslint-config": "1.2.1",
     "@shaharmor/prettier-config": "1.1.1",
     "@shaharmor/tsconfig": "0.0.4",
     "@types/chai": "4.2.4",
