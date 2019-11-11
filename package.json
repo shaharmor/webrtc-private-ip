@@ -40,7 +40,7 @@
     "@commitlint/cli": "8.2.0",
     "@shaharmor/commitlint-config": "0.0.1",
     "@shaharmor/eslint-config": "1.2.0",
-    "@shaharmor/prettier-config": "1.0.1",
+    "@shaharmor/prettier-config": "1.1.1",
     "@shaharmor/tsconfig": "0.0.4",
     "@types/chai": "4.2.4",
     "@types/mocha": "5.2.7",
