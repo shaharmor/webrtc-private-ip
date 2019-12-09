@@ -8,15 +8,23 @@
 $ npm install webrtc-private-ip
 ```
 
+Or using a CDN:
+
+```html
+<script src="https://unpkg.com/@shaharmor/webrtc-private-ip"></script>
+```
+
 ## Usage
 
 ```js
-import { webrtcPrivateIp } from 'webrtc-private-ip';
-
 (async () => {
   const ip = await webrtcPrivateIp();
   if (ip) {
-    //=> '192.168.1.1'
+    //ip => '192.168.1.1'
   }
 })()
 ```
+
+## Limitations
+
+- Will only works when WebRTC mDNS is not enabled.

@@ -24,13 +24,14 @@
   "main": "dist/webrtc-private-ip.js",
   "types": "dist/webrtc-private-ip.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "webpack",
+    "clean": "rm -rf ./coverage ./dist",
     "lint": "npm run lint:tsc && npm run lint:eslint",
     "lint:all": "npm run all -- run lint",
     "lint:eslint": "npm run lint:eslint:glob -- '**/*.{js,ts}'",
     "lint:eslint:glob": "eslint --max-warnings 0",
     "lint:tsc": "tsc -p tsconfig.json --noEmit",
-    "prepublish": "npm run build",
+    "prepublish": "NODE_ENV=production npm run build",
     "reformat": "npm run reformat:glob -- '**/*.{js,json,ts}'",
     "reformat:glob": "prettier --write",
     "test": "karma start",
@@ -44,6 +45,8 @@
     "@shaharmor/tsconfig": "0.1.1",
     "@types/chai": "4.2.5",
     "@types/mocha": "5.2.7",
+    "@types/webpack": "4.41.0",
+    "@types/webpack-dev-server": "3.9.0",
     "@types/webrtc": "0.0.25",
     "@typescript-eslint/eslint-plugin": "2.8.0",
     "chai": "4.2.0",
@@ -60,6 +63,13 @@
     "lint-staged": "9.5.0",
     "mocha": "6.2.2",
     "prettier": "1.19.1",
-    "sort-package-json": "1.23.1"
+    "sort-package-json": "1.23.1",
+    "ts-loader": "6.2.1",
+    "ts-node": "8.5.4",
+    "tsconfig-paths": "3.9.0",
+    "tsconfig-paths-webpack-plugin": "3.2.0",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.9.0"
   }
 }
