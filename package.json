@@ -1,6 +1,6 @@
 {
   "name": "@shaharmor/webrtc-private-ip",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Get your private-ip using WebRTC",
   "keywords": [
     "private-ip",
